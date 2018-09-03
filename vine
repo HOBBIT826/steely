@@ -1,0 +1,63 @@
+'''sends in random vine quote to help me cope '''
+
+
+import random
+
+
+__author__ = 'HOBBIT826'
+COMMAND = '8' 
+REPLIES = (
+    "fuk ya chicken strips",
+    "nice one bruva",
+    "HES DEAD",
+    "d d d d d d d d d derrick",
+    "what the fuck richard",
+    "ah. i cant believe you done dis",
+    "you cant fuck with meeeee
+    no one can fuck with meeeee",
+    "wut",
+    "is that a butterfly?
+    no its just me",
+    "oh my god i love chipotle.
+    chipotle is my lyf",
+    "lets get white girl wassssted",
+    "road works ahead?
+    ah yeah i sure hope it does"
+    "fish titties",
+    "im in me mums car
+    broom broom",
+    "look at all those chickens"
+    "good evening im oprah",
+    "i got dat bubbly",
+    "everybody saying they dont want ebola
+    
+    and im just sitting here like ebola what
+    
+    soup?",
+    "im a lesbian
+    
+    i thought you were american",
+    "its a avocado
+    
+    thaaaaaaanks",
+    "IM WASHING ME IN MY CLOTHES",
+    "you know what i love myself
+    even though i look like a bUrNt chicken nugget
+    i still love myself",
+    "why are you running",
+    "",
+    "moooove bitch get out the way",
+    "moms spaghetti",
+     "moms spaghetto",
+      "moms spaghetta",
+       "moms spaghettu",
+        "moms spaghettE",
+        
+    
+    
+)
+
+
+def main(bot, author_id, message, thread_id, thread_type, **kwargs):
+    bot.sendMessage(random.choice(REPLIES),
+                    thread_id=thread_id, thread_type=thread_type)
